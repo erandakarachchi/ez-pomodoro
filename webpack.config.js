@@ -5,7 +5,6 @@ module.exports = {
   mode: "production",
   entry: {
     background: "./src/background/background.ts",
-    content: "./src/content/content.ts",
     popup: "./src/popup/popup.ts",
   },
   output: {
@@ -32,12 +31,20 @@ module.exports = {
           to: "popup.html",
         },
         {
+          from: "src/popup/popup.css",
+          to: "popup.css",
+        },
+        {
           from: "src/manifest.json",
           to: "manifest.json",
         },
         {
-          from: "src/settings/settings.html",
-          to: "settings.html",
+          from: "src/options/options.html",
+          to: "options.html",
+        },
+        {
+          from: "src/assets",
+          to: "assets",
         },
       ],
     }),

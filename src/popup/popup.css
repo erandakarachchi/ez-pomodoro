@@ -1,0 +1,45 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-black: #3e3d39;
+  --primary-green: #79bd58;
+  --secondary-white: #eeeeea;
+
+  --md-spacing-unit: 8px;
+  /* Spacing variables */
+  --md-spacing-0: 0;
+  --md-spacing-1: calc(1 * var(--md-spacing-unit)); /* 8px */
+  --md-spacing-2: calc(2 * var(--md-spacing-unit)); /* 16px */
+  --md-spacing-3: calc(3 * var(--md-spacing-unit)); /* 24px */
+  --md-spacing-4: calc(4 * var(--md-spacing-unit)); /* 32px */
+  --md-spacing-5: calc(5 * var(--md-spacing-unit)); /* 40px */
+}
+
+button {
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app {
+  width: 300px;
+  height: 400px;
+  background-color: var(--primary-white);
+}
+
+.app-title {
+  text-align: center;
+  margin-top: var(--md-spacing-3);
+  font-size: 24px;
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--md-spacing-3);
+  gap: 10px;
+}

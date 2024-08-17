@@ -2,13 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Extension Popup</title>
     <link rel="stylesheet" type="text/css" href="popup.css" />
     <script type="text/javascript" src="popup.js"></script>
   </head>
   <body>
-    <div id="app">
-      <!-- Your popup HTML content here -->
+    <div class="app">
+      <label class="app-title">Easy Pomodoro</label>
+      <canvas
+        class="chart-container"
+        id="pomodoro-chart"
+        width="100"
+        height="100"
+      ></canvas>
+      <div class="button-container">
+        <button class="button" id="start">Start</button>
+        <button class="button" id="stop">Settings</button>
+      </div>
     </div>
   </body>
 </html>
