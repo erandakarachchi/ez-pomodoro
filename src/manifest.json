@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Extension",
+  "description": "This extension is made for demonstration purposes",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "contextMenus"],
+  "options_page": "settings.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Pomodoro Timer"
+  }
+}
